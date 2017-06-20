@@ -29,6 +29,31 @@
 	color:white;
 }
 
+.dashy-topbar .navbar-collapse {
+	border:none;
+}
+
+.dashy-topbar button.navbar-toggle {
+	border-color:#ef5350;
+	color: #ef5350;
+	border-radius: 0;
+	transition: all 100ms ease-in-out;
+}
+
+.dashy-topbar button.navbar-toggle:hover, .dashy-topbar button.navbar-toggle:focus {
+	border-color:white;
+	background-color: #ef5350;
+}
+
+.dashy-topbar button.navbar-toggle span.icon-bar {
+	background-color:#ef5350;
+	transition: all 100ms ease-in-out;
+}
+
+.dashy-topbar button.navbar-toggle:hover span.icon-bar, .dashy-topbar button.navbar-toggle:focus span.icon-bar {
+	background-color:white;
+}
+
 .fixed {
 	position: fixed;
 	top:0;

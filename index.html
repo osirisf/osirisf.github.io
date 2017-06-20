@@ -1,320 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+	<title>Federico Rossi</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Federico Rossi</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/freelancer.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- endbower -->
+
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="bower_components/lato/css/lato.css" />
+	<!-- endbower -->
+
+	<link rel="stylesheet" type="text/css" href="./src/stylesheets/topbar.css">
+	<link rel="stylesheet" type="text/css" href="./src/stylesheets/font.css">
+	<link rel="stylesheet" type="text/css" href="./src/stylesheets/flat-container.css">
+	<link rel="stylesheet" type="text/css" href="./src/stylesheets/lists.css">
+
 </head>
+<body data-spy="scroll" data-target="#topbar">
+	<div id="backover"></div>
+	<div class="darken"></div>	
+	<!--- TOPBAR -->
+	<header>
+		<nav id="topbar" class="navbar navbar-default dashy-topbar">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#" onClick="toTop()">FEDERICO ROSSI</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav">
+              	</ul>
+		      <ul class="nav navbar-nav navbar-right">
+            		<li class="active"><a href="#about">ABOUT ME</a></li>
+            		<li><a href="#projects">PROJECTS</a></li>
+            		<li><a href="#contacts">CONTACTS</a></li>					
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</header>	
+	<!--- END TOPBAR -->
 
-<body id="page-top" class="index">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Federico Rossi</a>
-            </div>
+	<!--- MAIN ARTICLES -->
+	<main id="top">
+		<article id="about" class="flat-container">
+		 	<h2>ABOUT ME</h2>
+				<div class="row">
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive round" src="img/me.jpg" alt="">
-                    <div class="intro-text">
-                        <span class="name">Federico Rossi</span>
-                        <hr class="star-light">
-                        <span class="skills">Computer Engineering</span><br><small>Engineering School Pisa</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+					<div class="col-md-6">
+						<ul class="list-group dashy-list">
+							<li class="list-group-item has-sub-list">Network design
+								<ul class="list-group">
+									<li class="list-group-item">Automated network address planning</li>
+									<li class="list-group-item">Switched VLAN</li>
+									<li class="list-group-item">STATIC,RIP,OSPF routing</li>
+									<li class="list-group-item">CISCO IOS configuration</li>
+								</ul>
+							</li>
+							<li class="list-group-item has-sub-list">Web developement
+								<ul class="list-group">
+									<li class="list-group-item">HTML5 (strong) ,CSS3 (strong) ,JS (strong)</li>
+									<li class="list-group-item">NodeJS (medium) ,PHP (strong)</li>
+									<li class="list-group-item">ExpressJS (medium) ,SocketIO (basic) ,Apache (strong)</li>
+									<li class="list-group-item">MySql (strong), MongoDB (basic)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<p>
+							<em>Who am I?</em><br>
+							My name is Federico Rossi. I'm a Computer Engineering Student
+							at University of Pisa.<br> I'm interested in computer networks designing
+							and web backend/frontend developement.<br>
+						</p>
+						<p>
+							<em>What do I study?</em><br>
+							Scientific High School (Grosseto, GR, Italy) 2009/10 - 2013/14 with honors<br>
+							Computer Engineering (BC's degree) (University of Pisa, PI, Italy) 2014/2015 2016/2017 - current 							
+						</p>
+					</div>
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="http://www.studiocastiglioni.biz" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/studiocastiglioni.png" class="img-responsive" alt="Studio Castiglioni's homepage">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+				</div>
+		</article>
 
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Personal projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#ioLayout" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                               ioLayout
-                            </div>
-                        </div>
-                        <img src="img/portfolio/iolayout.png" class="img-responsive" alt="Studio Castiglioni's homepage">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#ajax" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                ajax-Shorthands
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ajax.png" class="img-responsive" alt="Studio Castiglioni's homepage">
-                    </a>
-                </div>
-                 <div class="col-sm-4 portfolio-item">
-                    <a href="#quickdb" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                QuickDB
-                            </div>
-                        </div>
-                        <img src="img/portfolio/quickdb.png" class="img-responsive" alt="Studio Castiglioni's homepage">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-					<h3><small>coming soon...</small>
-                </div>
-            </div>
-            <div class="row">
-            </div>
-        </div>
-    </section>
+		<article id="projects" class="flat-container">
+		 	<h2>PROJECTS</h2>
+			<p>
+				<em>
+					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/sensors.Io_dist">Sensors.IO</a>
+				</em>
+				<br>
+				Sensor_IO is global-sensor-network web application built with ExpressJS completely based on JSON objects and API requests.<br>
+				Its data driven architecture aims to collect in one place
+				a great amount of heterogeneous data sources.<br>
+			</p>
 
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Location</h3>
-                        <p>Somewhere between Pisa and Grosseto, Italy.</p>
-                    </div>
-                    <div class="footer-col col-md-6">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://it.linkedin.com/in/federico-rossi-83a934100" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Federico Rossi 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+			<p>
+				<em>
+					<a target="_blank" class="dashy-link" href="http://www.studiocastiglioni.biz/">Studio Castiglioni's website (commissioned)</a>
+				</em>
+				<br>
+				Showcasing/portfolio website for building structures consulting firm "Studio Castiglioni".
+				Fully dynamic and totally powered by JS.
+			</p>			
+		</article>
+	</main>
+	<!-- END MAIN ARTICLES -->
 
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="ioLayout" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>ioLayout</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/iolayout.png" class="img-responsive img-centered" alt="">
-                            <p style="font-weight:normal">ioLayout is a simple layout model written in CSS3,JAVASCRIPT,HTML5. It relies on mobile-first-approach as well as freedom from other libraries like JQuery and other CSS frameworks.
-                            It comes with a blue color refining, but you can easily change it by following "blue.css" file.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Github Repository:
-                                    <strong><a target="_blank" href="https://github.com/osirisf/ioLayout">Link</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a target="_blank" href="#">JS,CSS Micro-Framework</a>
-                                    </strong>
-                                </li>
-                                <li>
-                                    Examples:
-                                    <strong><a target="_blank" href="./ioLayout">Link</a>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<footer id="contacts" class="flat-container">
+		<h2>CONTACTS</h2>
+		<p>	
+			<em>About this page</em><br>
+			This is the personal portfolio/CV of computer engineering student/
+			enthusiast web designer/developer <em>Federico Rossi</em>. <br>Showcasing commissioned works and
+			personal projects.
+		</p>
+		<p>	
+			<em>Contacts</em><br>
+			<address>
+				Federico Rossi, Italy.<br>
+				<a href="#contacts" onclick="showMail(this)">Show mail</a>
+			</address>
+		</p>
+	</footer>
 
-    <div class="portfolio-modal modal fade" id="ajax" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Ajax Shorthands</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ajax.png" class="img-responsive img-centered" alt="">
-                            <p style="font-weight:normal">Some AJAX shorthand scripts written in pure JS (vanilla).
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Github Repository:
-                                    <strong><a target="_blank" href="https://github.com/osirisf/ajax-shorthand">Link</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a target="_blank" href="#">JS Micro-Framework</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="quickdb" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>PhpQuickDB</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/quickdb.png" class="img-responsive img-centered" alt="">
-                            <p style="font-weight:normal">QuickDB is designed for database connection and querying based on MySQLi with full support for JSON responses.<br>
-							Model is built to modelize almost every MySQL table starting from its name.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Github Repository:
-                                    <strong><a target="_blank" href="https://github.com/osirisf/phpQuickDB">Link</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a target="_blank" href="#">PHP MySql-Framework</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <script src="js/freelancer.js"></script>
 </body>
+
+<script type="text/javascript" src="./src/js/dashy.js"></script>
 
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Federico Rossi <f.rossi57@studenti.unipi.it>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "3.3.4",
+    "font-awesome": "^4.7.0",
+    "lato": "^0.3.0"
+  }
+}

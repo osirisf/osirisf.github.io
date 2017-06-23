@@ -16,8 +16,8 @@ ul.dashy-list .list-group-item:last-child {
 
 ul.dashy-list .list-group-item.has-sub-list {
 	background-color: white;
-	color:black;
-	font-weight: 400;
+	color:#333;
+	font-weight: 300;
 	font-style: italic;
 }
 

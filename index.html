@@ -22,29 +22,29 @@
 	<link rel="stylesheet" type="text/css" href="./src/stylesheets/lists.css">
 
 </head>
-<body data-spy="scroll" data-target="#topbar">
+<body onload="init()">
 	<div id="backover"></div>
 	<div class="darken"></div>	
 	<!--- TOPBAR -->
 	<header>
-		<nav id="topbar" class="navbar navbar-default dashy-topbar">
+		<nav id="topbar" class="navbar navbar-default dashy-topbar fixed">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" id="dashy-topbar-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#" onClick="toTop()">FEDERICO ROSSI</a>
+		      <a class="navbar-brand" onclick="scrollToTop()" href="#top">FEDERICO ROSSI</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
               	</ul>
 		      <ul class="nav navbar-nav navbar-right">
-            		<li class="active"><a href="#about">ABOUT ME</a></li>
-            		<li><a href="#projects">PROJECTS</a></li>
-            		<li><a href="#contacts">CONTACTS</a></li>					
+            		<li class="active"><a onClick="scrollTo(this)" href="#about">ABOUT ME</a></li>
+            		<li><a onClick="scrollTo(this)" href="#projects">PROJECTS</a></li>
+            		<li><a onClick="scrollTo(this)" href="#contacts">CONTACTS</a></li>					
 		      </ul>
 		    </div>
 		  </div>

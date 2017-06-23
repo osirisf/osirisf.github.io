@@ -24,9 +24,18 @@
   font-size:15px;
 }
 
+.dashy-topbar .navbar-nav li a {
+	transition: all 100ms ease-in-out;
+}
+
 .dashy-topbar .navbar-nav li.active a {
-	background-color: #ef5350;
-	color:white;
+  color:white;
+  background-color: #ef5350;
+}
+
+.dashy-topbar .navbar-nav li.dashy-active a {
+  color:white;
+  background-color: #ef5350;	
 }
 
 .dashy-topbar .navbar-collapse {

@@ -28,12 +28,12 @@
 	transition: all 100ms ease-in-out;
 }
 
-.dashy-topbar .navbar-nav li.active a {
-  color:white;
-  background-color: #ef5350;
-}
 
-.dashy-topbar .navbar-nav li.dashy-active a {
+.dashy-topbar .navbar-nav li.dashy-active a, .dashy-topbar .navbar-nav li.dashy-active:hover a,
+.dashy-topbar .navbar-nav li.active a, .dashy-topbar .navbar-nav li.active:hover a,
+.dashy-topbar .navbar-nav li.active a, .dashy-topbar .navbar-nav li.dashy-active a:focus,
+.dashy-topbar .navbar-nav li.active a, .dashy-topbar .navbar-nav li.active a:focus
+ {
   color:white;
   background-color: #ef5350;	
 }

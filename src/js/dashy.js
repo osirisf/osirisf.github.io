@@ -26,8 +26,15 @@ function init() {
 }
 
 function highlightCurrentAnchor(sectionAnchor) {
+    console.log("Visiting: ")
+    console.log(sectionAnchor);
+    console.log("Last visited: ")
+    console.log(Dashy.lastVisitedAnchor);
     if(Dashy.lastVisitedAnchor) {
         $(Dashy.lastVisitedAnchor).parent().removeClass("dashy-active");
+        $(Dashy.lastVisitedAnchor).removeClass("dashy-active");
+        $(Dashy.lastVisitedAnchor).removeClass("active");        
+        $(Dashy.lastVisitedAnchor).removeClass("active");        
     }
     $(sectionAnchor).parent().addClass("dashy-active");
     Dashy.lastVisitedAnchor = sectionAnchor;    
@@ -39,7 +46,7 @@ function scrollTo(sectionAnchor,forced) {
     var sectionTop = Math.round(section.position().top);
     var sectionTopOffset = sectionTop - Dashy.topBarOuterHeight;
     $("body").animate({'scrollTop':sectionTopOffset},500,'swing',function() {
-        if(!forced && $(window).width() <= Dashy.responsiveTriggerWidth)
+        if(!forced && $(window).width() < Dashy.responsiveTriggerWidth)
             $("#dashy-topbar-toggle").click();
     });
     highlightCurrentAnchor(sectionAnchor);

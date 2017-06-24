@@ -21,7 +21,6 @@ function init() {
         offset:Dashy.topBarOuterHeight
     })
     $("#topbar li").on("activate.bs.scrollspy",function(el) {
-    	scrollTo(el.target.firstChild);
         highlightCurrentAnchor(el.target.firstChild);
     });
 }

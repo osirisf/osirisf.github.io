@@ -22,7 +22,7 @@ function init() {
         offset:Dashy.topBarOuterHeight
     })
     $("#topbar li").on("activate.bs.scrollspy",function(el) {
-    	console.log(el.target.firstChild);
+    	scrollTo(el.target.firstChild);
         highlightCurrentAnchor(el.target.firstChild);
     });
 }
@@ -40,7 +40,7 @@ function scrollTo(sectionAnchor,forced) {
     var sectionId = $(sectionAnchor).attr("href");
     var section = $(sectionId);
     var sectionTop = Math.round(section.position().top);
-    var sectionTopOffset = sectionTop - Dashy.topBarOuterHeight;
+    var sectionTopOffset = sectionTop - Dashy.topBarInnerHeight;
     $("body").animate({'scrollTop':sectionTopOffset},500,'swing',function() {
         if(!forced && $(window).width() < Dashy.responsiveTriggerWidth)
             $("#dashy-topbar-toggle").click();

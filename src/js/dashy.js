@@ -21,20 +21,15 @@ function init() {
         offset:Dashy.topBarOuterHeight
     })
     $("#topbar li").on("activate.bs.scrollspy",function(el) {
-        highlightCurrentAnchor(el.target);
+    	console.log(el.target.firstChild);
+        highlightCurrentAnchor(el.target.firstChild);
     });
 }
 
 function highlightCurrentAnchor(sectionAnchor) {
-    console.log("Visiting: ")
-    console.log(sectionAnchor);
-    console.log("Last visited: ")
-    console.log(Dashy.lastVisitedAnchor);
     if(Dashy.lastVisitedAnchor) {
         $(Dashy.lastVisitedAnchor).parent().removeClass("dashy-active");
-        $(Dashy.lastVisitedAnchor).removeClass("dashy-active");
-        $(Dashy.lastVisitedAnchor).removeClass("active");        
-        $(Dashy.lastVisitedAnchor).removeClass("active");        
+        $(Dashy.lastVisitedAnchor).parent().removeClass("active");
     }
     $(sectionAnchor).parent().addClass("dashy-active");
     Dashy.lastVisitedAnchor = sectionAnchor;    

@@ -15,7 +15,6 @@ function init() {
     $("#top").animate({'padding-top':Dashy.topBarOuterHeight+"px"},250,'swing',function() {
         var hashLocation = ($.inArray(window.location.hash,Dashy.permittedLocations)>-1)? window.location.hash:'about';
         scrollTo($("a[href$='"+hashLocation+"']"),true);
-        $("main").animate({'opacity':1},250,'swing');
     });
     $("body").scrollspy({
         target:"#topbar",

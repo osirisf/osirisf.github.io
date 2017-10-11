@@ -8,16 +8,10 @@
 
 .dashy-topbar .navbar-brand {
   font-size:30px;
-  color:white;
-  background-color: #ef5350;
-  font-style: italic;
-  font-weight: 400;
+  color:#ef5350;
 }
 
-.dashy-topbar .navbar-brand:hover {
-  color:white;
-  background-color: #ef5350;
-}
+
 
 
 .dashy-topbar .navbar-nav {

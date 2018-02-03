@@ -6,6 +6,11 @@ article.flat-container {
 	/*min-height: 500px;*/
 }
 
+.flat-container p em {
+  display: inline-block;
+	margin-bottom: 5px;
+}
+
 .flat-container h2 {
 	font-size:25px;
 	display: inline-block;

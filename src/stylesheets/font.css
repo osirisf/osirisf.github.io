@@ -1,32 +1,33 @@
 body,h1,h2,h3,h4,h5,h6 {
 	font-family: "Lato",sans-serif;
 	font-weight: 300;
-	font-size:20px;
+	font-size:18px;
 	position: relative;
 }
 
 a {
+	font-style:normal;
 	text-decoration: none;
 	margin:0;
 	padding:0;
 }
 
 a.dashy-link {
-	color: #ef5350;	
-	border-bottom:1px dotted #ef5350;
+	color: #ef5350;
 }
 
 a.dashy-link:hover {
 	text-decoration: none;
-
+	border-bottom:1px solid red;
 }
 
-em {
+em.em-contact {
 	color: #ef5350;
 	font-weight: 400;
 	transition: all 100ms ease-in-out;
+	border-bottom: 1px solid transparent;
 }
 
-em:hover {
-	border-bottom:1px solid #ef5350;	
+em.em-contact:hover {
+	border-bottom:1px solid white;
 }

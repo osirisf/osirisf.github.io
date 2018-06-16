@@ -34,6 +34,12 @@ article.flat-container h2:hover {
 	padding-left:10px;
 }
 
+article.flat-container h2.em {
+	background-color: #ef5350;
+	color:white;
+	padding-left:10px;
+}
+
 article.flat-container h2 {
 	color: #ef5350;
 	background-color:white;

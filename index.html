@@ -57,36 +57,14 @@
 	<!--- MAIN ARTICLES -->
 	<main id="top">
 		<article id="about" class="flat-container">
-		 	<h2>ABOUT ME</h2>
+		 	<h2 class="em">ABOUT ME</h2>
 				<div class="row">
-
-
-					<div class="col-md-6">
-						<ul class="list-group dashy-list">
-							<li class="list-group-item has-sub-list">Network design
-								<ul class="list-group">
-									<li class="list-group-item">Automated network address planning</li>
-									<li class="list-group-item">Switched VLAN</li>
-									<li class="list-group-item">STATIC,RIP,OSPF routing</li>
-									<li class="list-group-item">CISCO IOS configuration</li>
-								</ul>
-							</li>
-							<li class="list-group-item has-sub-list">Web developement
-								<ul class="list-group">
-									<li class="list-group-item">HTML5 (strong) ,CSS3 (strong) ,JS (strong)</li>
-									<li class="list-group-item">NodeJS (medium) ,PHP (strong)</li>
-									<li class="list-group-item">ExpressJS (medium) ,SocketIO (basic) ,Apache (strong)</li>
-									<li class="list-group-item">MySql (strong), MongoDB (basic)</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<p>
 							<em>Who am I?</em><br>
 							My name is Federico Rossi. I'm a Computer Engineering Student
-							at University of Pisa.<br> I'm interested in computer networks designing
-							and web backend/frontend developement.<br>
+							at University of Pisa.<br> I'm interested in computer networks/security
+							and computational intelligence<br>
 						</p>
 						<p>
 							<em>What do I study?</em><br>
@@ -100,12 +78,12 @@
 		</article>
 
 		<article id="projects" class="flat-container">
-		 	<h2>BC'S PROJECTS</h2>
+		 	<h2 class="em">Bachelor's degree PROJECTS</h2>
 			<p>
 				<em>
 					<a target="_blank" class="dashy-link" href="./files/thesis.pdf">Thesis</a>
 				</em><br>
-				The <strong>AWS</strong> (automatic weather station) used on the glacier of La Mare is a data logging capable device that sends glacier's en-
+				<strong>Abstract:</strong> The AWS (automatic weather station) used on the glacier of La Mare is a data logging capable device that sends glacier's en-
 				vironment measurements to a remote server via satellite communication. Then data are redirected
 				to a FTP server, from which they're retrieved,elaborated and represented in a web application.
 				The system has been operative for a few years until January 2015, when data from the device
@@ -115,13 +93,23 @@
 				system connectivity on the glacier.					
 				<br>
 			</p>
+			<p>
+				<em>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/Spacebooks">
+						Spacebooks
+					</a>
+				</em><br>
+				Web development class project featuring a file-sharing based social network powered by
+				Apache, MySql, PHP and Javascript (AMP stack) without using any framework (e.g JQuery, Bootstrap etc.).<br>
+				UI demo and description (only IT) can be found here: <a class="dashy-link" href="http://federicorossifr.github.io/Spacebooks/">Go!</a>
+			</p>			
 		</article>
 
 		<article class="flat-container">
-			<h2>MA'S PROJECTS</h2>
+			<h2 class="em">Master's degree PROJECTS</h2>
 			<p>
 				<em>
-					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/sep8emulator">Sep8 Emulator</a>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/sep8emulator">Sep8 Emulator</a>
 				</em><br>
 				Development of a C++ emulator for a didactic computer architecture, including a Python
 				script to assemble mnemonic instructions from the processor instruction set to machine code.		
@@ -130,7 +118,7 @@
 
 			<p>
 				<em>
-					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/VHDLMatrixMultiplier">VHDL Matrix Multiplier</a>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/VHDLMatrixMultiplier">VHDL Matrix Multiplier</a>
 				</em><br>
 				Design, synthesis and implementation of a Matrix Multiplier using VHDL and Xilinx Vivado tool suite.			
 				<br>				
@@ -138,15 +126,32 @@
 
 			<p>
 				<em>
-					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/">LTE-like Cell Simulator (code not available for now)</a>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/">LTE-like Cell Simulator (code not available for now)</a>
 				</em><br>
 				Design, development and performance analysis of a simulator for a simplified LTE cell using Omnet++.			
 				<br>					
 			</p>
+
+			<p>
+				<em>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/ColorReproductionNeuralSystem">Intelligent system for color reproduction fidelity</a>
+				</em><br>
+				Design and development of an intelligent system to assess color reproduction fidelity in an industrial color copy process using fuzzy inference systems to correct CIE Delta values.
+				<br>					
+			</p>
+
+			<p>
+				<em>
+					<a target="_blank" class="dashy-link" href="https://github.com/federicorossifr/SmartTrafficLight">Smart traffic light with embedded networked systems</a>
+				</em><br>
+				Design and development of a smart traffic lighting system using Contiki OS on T-Mote Sky embedded platforms.
+				<br>					
+			</p>
+
 		</article>
 
 		<article class="flat-container">
-		 	<h2>PERSONAL PROJECTS</h2>
+		 	<h2 class="em">PERSONAL PROJECTS</h2>
 			<p>
 				<em>
 					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/sensors.Io_dist">Sensors.IO</a>
@@ -165,26 +170,6 @@
 				Showcasing/portfolio website for building structures consulting firm "Studio Castiglioni".
 				Fully dynamic and totally powered by JS.
 			</p>
-			<p>
-				<em>
-					<a target="_blank" class="dashy-link" href="https://github.com/osirisf/Spacebooks">
-						Spacebooks
-					</a>
-				</em><br>
-				Web development class project featuring a file-sharing based social network powered by
-				Apache, MySql, PHP and Javascript (AMP stack) without using any framework (e.g JQuery, Bootstrap etc.).<br>
-				UI demo and description (only IT) can be found here: <a class="dashy-link" href="http://osirisf.github.io/Spacebooks/">Go!</a>
-			</p>
-			<p>
-				<em>
-					<a class="dashy-link" href="https://github.com/osirisf/MyPixels">
-						MyPixels
-					</a>
-				</em><br>
-				Personal web development project of a Instagram-like web application based on the AMP stack,
-				featuring router-controller and CRUD paradigms.
-				UI demo and description (only IT) can be found here: <a class="dashy-link" href="http://osirisf.github.io/MyPixels/"></a>
-			</p>
 		</article>
 	</main>
 	<!-- END MAIN ARTICLES -->
@@ -194,8 +179,14 @@
 		<h2>CONTACTS</h2>
 		<p>	
 			<em class="em-contact">About this page</em><br>
-			This is the personal portfolio/CV of computer engineering student <em>Federico Rossi</em>. <br>Showcasing commissioned works, class and
+			This is the personal portfolio/CV of computer engineering student <em>Federico Rossi</em>. <br>Here are showcased commissioned works, class and
 			personal projects.
+		</p>
+		<p>	
+		   <em class="em-contact">Github</em>
+		   <address>
+		   		<a href="https://github.com/federicorossifr">federicorossifr@github</a>
+		   </address>
 		</p>
 		<p>	
 			<em class="em-contact">Contacts</em><br>
